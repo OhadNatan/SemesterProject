@@ -7,7 +7,7 @@ public class Worker extends User{
 	private String emailAddress;
 	private String role;
 	private String workerIdumber;
-	
+	private Park park;
 	
 	public Worker(String firstName, String lastName, String emailAddress, String role, String workerIdumber) {
 		super();
@@ -17,7 +17,16 @@ public class Worker extends User{
 		this.role = role;
 		this.workerIdumber = workerIdumber;
 	}
+
 	
+	public Park getPark() {
+		return park;
+	}
+
+	public void setPark(Park park) {
+		this.park = park;
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -48,4 +57,5 @@ public class Worker extends User{
 	public void setWorkerIdumber(String workerIdumber) {
 		this.workerIdumber = workerIdumber;
 	}
+	public void setOrder()
 }
