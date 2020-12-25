@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServiceNewOrderController">
+   <children>
+      <Label layoutX="242.0" layoutY="35.0" text="New Order">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="CbParkName" layoutX="302.0" layoutY="145.0" prefWidth="150.0" />
+      <ComboBox fx:id="CbNumberOfVisitors" layoutX="302.0" layoutY="183.0" prefWidth="150.0" />
+      <DatePicker fx:id="CbDate" layoutX="301.0" layoutY="220.0" prefHeight="25.0" prefWidth="150.0" />
+      <ComboBox fx:id="CbTime" layoutX="301.0" layoutY="258.0" prefWidth="150.0" />
+      <TextField fx:id="TxtFieldEmail" layoutX="302.0" layoutY="294.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="169.0" layoutY="150.0" text="Park Name">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="188.0" text="Number Of Visitors">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="225.0" text="Date">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="263.0" text="Time">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="299.0" text="Email">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnSetOrder" layoutX="268.0" layoutY="366.0" mnemonicParsing="false" text="Set Order" />
+      <Label layoutX="482.0" layoutY="331.0" text="temp" />
+      <Button fx:id="Bill" layoutX="470.0" layoutY="354.0" mnemonicParsing="false" onAction="#OpenBill" text="Bill Page" />
+      <Button fx:id="Wrong" layoutX="470.0" layoutY="391.0" mnemonicParsing="false" onAction="#OpenWrongDate" text="Wrong" />
+   </children>
+</AnchorPane>

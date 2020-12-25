@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OrderSubmittedController">
+   <children>
+      <AnchorPane prefHeight="365.0" prefWidth="394.0">
+         <children>
+            <ImageView fx:id="ImgLogo" fitHeight="95.0" fitWidth="169.0" layoutX="113.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="72.0" layoutY="89.0" text="congratulation ">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="174.0" text="Your order have been submitted">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="TxtSubscriptionNumber" layoutX="67.0" layoutY="206.0" text="We will send you Email and SMS ">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font></Label>
+            <Button fx:id="BtnExit" layoutX="178.0" layoutY="308.0" mnemonicParsing="false" onAction="#Exit" text="exit" />
+            <Label layoutX="15.0" layoutY="227.0" text="to confirm the visit one day before the arrival">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

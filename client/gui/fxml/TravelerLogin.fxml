@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TravelerLoginController">
+   <children>
+      <SplitPane orientation="VERTICAL" prefHeight="582.0" prefWidth="821.0">
+        <items>
+            <AnchorPane prefHeight="210.0" prefWidth="819.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Label layoutX="283.0" layoutY="206.0" text="Traveler Entry">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="ImgLogo" fitHeight="102.0" fitWidth="270.0" layoutX="275.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="212.0" layoutY="312.0" text="ID/Subscription Number :">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TxtFieldIDSubscription" layoutX="395.0" layoutY="307.0" />
+                  <Button fx:id="BtnLogin" layoutX="561.0" layoutY="442.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="127.0" text="Login">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnBack" layoutX="114.0" layoutY="442.0" mnemonicParsing="false" onAction="#GoBackToLogin" prefHeight="43.0" prefWidth="127.0" text="Back">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="temp" layoutX="371.0" layoutY="451.0" mnemonicParsing="false" onAction="#Temp" text="Temp Login" />
+                  <Label layoutX="388.0" layoutY="402.0" text="Temp button" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SubscriptionNumberController">
+   <children>
+      <AnchorPane prefHeight="346.0" prefWidth="361.0">
+         <children>
+            <ImageView fx:id="ImgLogo" fitHeight="95.0" fitWidth="169.0" layoutX="96.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="57.0" layoutY="88.0" text="congratulation ">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="173.0" text="your subscription number is">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="TxtSubscriptionNumber" layoutX="125.0" layoutY="235.0" style="-fx-text-fill: green;" text="Supscription number" />
+            <Button fx:id="BtnExit" layoutX="163.0" layoutY="307.0" mnemonicParsing="false" onAction="#Exit" text="exit" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -2,8 +2,9 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="client/src"/>
-	<classpathentry kind="src" path="server/src"/>
-	<classpathentry kind="lib" path="client/lib/mysql-connector-java-8.0.13.jar"/>
-	<classpathentry kind="lib" path="server/lib/mysql-connector-java-8.0.13.jar"/>
+	<classpathentry kind="src" path="client/gui"/>
+	<classpathentry kind="src" path="client/controller"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/OCSF"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GUI-Shared"/>
 	<classpathentry kind="output" path="client/bin"/>
 </classpath>

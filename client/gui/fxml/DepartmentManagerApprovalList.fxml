@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="493.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentApprovalListController">
+   <children>
+      <Label layoutX="230.0" layoutY="62.0" text="Approval List">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ChangeTable" layoutX="21.0" layoutY="162.0" prefHeight="255.0" prefWidth="562.0">
+        <columns>
+          <TableColumn prefWidth="151.0" text="Change Name" />
+          <TableColumn prefWidth="133.0" text="Before" />
+            <TableColumn prefWidth="132.0" text="After" />
+            <TableColumn prefWidth="145.0" text="Change Approval" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

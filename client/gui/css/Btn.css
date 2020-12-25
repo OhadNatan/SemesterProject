@@ -1,0 +1,12 @@
+.button {
+	-fx-background-color: #98FB98;
+	-fx-background-radius: 5.0em; 
+    -fx-min-width: 100.0px; 
+    -fx-min-height: 25.0px; 
+    
+    
+}
+
+.button:hover {
+	-fx-effect: dropshadow(three-pass-box, #383838, 3.0, 0.0, 0.0, 1.0);
+}

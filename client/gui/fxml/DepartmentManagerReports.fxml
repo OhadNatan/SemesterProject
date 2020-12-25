@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorReports" prefHeight="479.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentReportsController">
+   <children>
+      <Label layoutX="307.0" layoutY="91.0" text="Report">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnVisitorReport" contentDisplay="TOP" layoutX="74.0" layoutY="203.0" mnemonicParsing="false" onAction="#VisitorReport" text="Visitor Report">
+         <graphic>
+            <ImageView fx:id="ImgVisitorReport" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="BtnCancellationReport" contentDisplay="TOP" layoutX="420.0" layoutY="203.0" mnemonicParsing="false" onAction="#CancellationReport" prefHeight="180.0" prefWidth="170.0" text="Cancellation Report">
+         <graphic>
+            <ImageView fx:id="ImgCancellationReport" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

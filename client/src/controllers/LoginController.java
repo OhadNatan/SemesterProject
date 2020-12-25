@@ -31,6 +31,7 @@ public class LoginController extends AbstractController{
 	
 	@Override
 	public Object RunQueryOnDB(Object id) {
+		return id;
 		//TODO: adding query
 	}
 

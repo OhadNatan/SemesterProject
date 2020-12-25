@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ParkManagerController">
+   <children>
+      <SplitPane dividerPositions="0.14705882352941177" orientation="VERTICAL" prefHeight="582.0" prefWidth="821.0">
+         <items>
+            <AnchorPane prefHeight="210.0" prefWidth="819.0">
+               <children>
+                  <Button fx:id="BtnLogo" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoHome">
+                     <graphic>
+                        <ImageView fx:id="ImgLogo" fitHeight="95.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BtnLogOut" layoutX="756.0" layoutY="17.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="43.0" prefWidth="25.0">
+                     <graphic>
+                        <ImageView fx:id="ImgLogOut" fitHeight="44.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Label layoutX="332.0" layoutY="22.0" text="Wellcome">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" layoutX="621.0" layoutY="17.0" prefHeight="52.0" prefWidth="135.0" spacing="5.0">
+                     <children>
+                        <Label fx:id="TxtNameOfEmployee" text="Name of employee" />
+                        <Label text="Park Manager" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <SplitPane dividerPositions="0.1684981684981685" prefHeight="470.0" prefWidth="819.0">
+               <items>
+                  <HBox prefHeight="465.0" prefWidth="148.0">
+                     <children>
+                        <AnchorPane prefHeight="303.0" prefWidth="137.0">
+                           <children>
+                              <Button fx:id="BtnChange" contentDisplay="TOP" layoutX="6.0" layoutY="246.0" mnemonicParsing="false" onAction="#OpenChange" prefHeight="133.0" prefWidth="123.0" text="Change" textAlignment="CENTER" textOverrun="CLIP">
+                                 <graphic>
+                                    <ImageView fx:id="ImgChange" fitHeight="127.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="BtnReports" contentDisplay="TOP" layoutX="6.0" layoutY="68.0" mnemonicParsing="false" onAction="#OpenReports" prefHeight="126.0" prefWidth="116.0" text="Reports">
+                                 <graphic>
+                                    <ImageView fx:id="ImgReports" fitHeight="110.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <AnchorPane fx:id="TempAnchor" prefHeight="465.0" prefWidth="651.0" />
+               </items>
+            </SplitPane>
+         </items>
+      </SplitPane>
+   </children>
+</VBox>
