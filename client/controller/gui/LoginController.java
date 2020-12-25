@@ -52,6 +52,7 @@ public class LoginController implements Initializable {
 		Parent root = FXMLLoader.load(getClass().getResource("/fxml/LoginPage.fxml"));
 		Scene scene = new Scene(root);
 		
+		primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/Img/Logo.png")));
 		primaryStage.setTitle("Login");
 		primaryStage.setScene(scene);
 		primaryStage.show();
