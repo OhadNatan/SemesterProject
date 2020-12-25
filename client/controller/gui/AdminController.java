@@ -123,12 +123,12 @@ public class AdminController extends ControllerInterface {
 
 	@FXML
 	void OpenNewFamily(ActionEvent event) {
-		setAnchor("/fxml/ServiseWorkerNewFamily.fxml");
+		setAnchor("/fxml/ServiceWorkerNewFamily.fxml");
 	}
 
 	@FXML
 	void OpenNewGuide(ActionEvent event) {
-		setAnchor("/fxml/ServiseWorkerNewGuide.fxml");
+		setAnchor("/fxml/ServiceWorkerNewGuide.fxml");
 	}
 
 	@FXML
